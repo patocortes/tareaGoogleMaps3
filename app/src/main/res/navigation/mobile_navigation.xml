@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tareaubicaciongooglemaps.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/ubicacion"
+        android:name="com.example.tareaubicaciongooglemaps.Ubicacion"
+        android:label="activity_ubicacion"
+        tools:layout="@layout/activity_ubicacion" />
+
+    <activity
+        android:id="@+id/mapaUbicacion"
+        android:name="com.example.tareaubicaciongooglemaps.MapaUbicacion"
+        android:label="activity_mapa_ubicacion"
+        tools:layout="@layout/activity_mapa_ubicacion" />
+    <activity
+        android:id="@+id/rutaGPS"
+        android:name="com.example.tareaubicaciongooglemaps.RutaGPS"
+        android:label="activity_ruta_g_p_s"
+        tools:layout="@layout/activity_ruta_g_p_s" />
+
+</navigation>
